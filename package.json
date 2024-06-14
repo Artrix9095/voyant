@@ -1,0 +1,35 @@
+{
+  "name": "voyant",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.43.4",
+    "@tanstack/react-router": "^1.36.3",
+    "@tanstack/router-cli": "^1.37.0",
+    "@tanstack/router-devtools": "^1.36.3",
+    "@tanstack/router-vite-plugin": "^1.37.0",
+    "@tauri-apps/api": "^1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "vite-tsconfig-paths": "^4.3.2",
+    "@biomejs/biome": "1.8.1",
+    "@tauri-apps/cli": "^1",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.0-beta",
+    "vite": "^5.0.0"
+  }
+}

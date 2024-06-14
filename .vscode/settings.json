@@ -1,0 +1,8 @@
+{
+  "biome.enabled": true,
+  "editor.defaultFormatter": "biomejs.biome",
+  "quickfix.biome": "explicit",
+  "source.organizeImports.biome": "explicit",
+  "prettier.enable": false,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
