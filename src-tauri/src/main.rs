@@ -2,7 +2,6 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 use std::process::Command;
 
-
 #[tauri::command]
 fn get_running_applications() -> Result<Vec<String>, String> {
     if cfg!(target_os = "windows") {
@@ -44,9 +43,9 @@ fn get_running_applications() -> Result<Vec<String>, String> {
     }
 }
 
-
 fn main() {
     tauri::Builder::default()
+        .plugin(tauri_plugin_store::Builder::default().build())
         .invoke_handler(tauri::generate_handler![get_running_applications])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
