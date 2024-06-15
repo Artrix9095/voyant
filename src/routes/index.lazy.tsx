@@ -1,5 +1,5 @@
 import { createLazyFileRoute } from '@tanstack/react-router';
-
+import '@/lib/watcher';
 export const Route = createLazyFileRoute('/')({
     component: Index,
 });
